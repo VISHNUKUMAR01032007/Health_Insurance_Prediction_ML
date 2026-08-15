@@ -1,42 +1,35 @@
 # 🫀 Health Insurance Premium Prediction — Summary
 
-This project uses Machine Learning to predict health insurance charges/premiums based on factors such as:
+### Workflow
 
-Age
-Gender
-BMI
-Number of children
-Smoking status
-Region
+* Import and understand the insurance dataset.
+* Perform **data cleaning and preprocessing**.
+* Analyze data using **EDA and visualizations**.
+* Encode categorical features and scale numerical features.
+* Split data into **training and testing sets**.
+* Build multiple **Linear Regression models**.
+* Evaluate models using **MSE and R² Score**.
+* Select the best-performing model.
 
-🔄 Project Process
-Dataset → Data Cleaning → EDA → Encoding → Train/Test Split → Model Training → Evaluation → Prediction
+### Technologies
 
-🤖 Models Used
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Matplotlib**
+* **Seaborn**
+* **Scikit-learn**
+* **Google Colab**
+* **Linear Regression**
+* **StandardScaler & OneHotEncoder** 
 
-Three Linear Regression models are compared:
+### Model Comparison
 
-Model 1: Age only
-Model 2: Age + BMI
-Model 3: All available features
+* Model 1: Age Only
+* Model 2: Age + BMI
+* Model 3: All Features
+* **Best Model:** Model 3 with **Test R² = 0.7724**. 
 
-The models are evaluated using:
+### Conclusion
 
-MSE (Mean Squared Error) — lower is better
-R² Score — higher is better
-🏆 Final Model
-
-Model 3, which uses all available features, is selected as the final model because it provides better predictive performance and generalization compared with the simpler models.
-
-🛠️ Technologies
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-Google Colab / Jupyter Notebook
-
-🔮 Final Output
-
-The trained model can take information about a new individual and predict their expected health insurance charge.
+The project successfully predicts health insurance charges using machine learning. Using **all relevant features** significantly improves prediction performance compared with using only age or BMI.
